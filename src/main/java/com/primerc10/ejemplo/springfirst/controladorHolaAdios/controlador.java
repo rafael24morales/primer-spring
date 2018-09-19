@@ -7,15 +7,17 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 @Controller
+@RequestMapping("/uno")
 public class controlador {
 
-    @RequestMapping("/hola")
+    @RequestMapping("/holi")
     public String respondeHola(){
-        return "adios";
+        return "hola";
     }
 
     @RequestMapping("/adios")
@@ -54,6 +56,7 @@ public class controlador {
     @RequestMapping("/YEEEI")
     @ResponseBody
     public List<PowerRangers> listar(){
+
         return Arrays.asList(
           new PowerRangers(1,"ElJuan","Rojo"),
           new PowerRangers(2,"ElLuperto","Morado")

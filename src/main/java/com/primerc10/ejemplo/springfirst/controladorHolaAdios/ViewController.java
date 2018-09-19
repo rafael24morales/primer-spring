@@ -1,10 +1,11 @@
 package com.primerc10.ejemplo.springfirst.controladorHolaAdios;
 
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
-@Component
+@Controller
 public class ViewController implements WebMvcConfigurer {
 
     @Override
