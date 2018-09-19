@@ -24,4 +24,9 @@ public class RangersService {
     public List<PowerRangers> getAllPowers(){
         return rangers;
     }
+
+    public void insertRanger(PowerRangers powerRanger) {
+        rangers.add(powerRanger);
+
+    }
 }
